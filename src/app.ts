@@ -2,6 +2,7 @@ import express from 'express';
 import compression from 'compression';
 import bodyParser from 'body-parser';
 
+import * as greetingController from './controllers/greeting';
 import * as healthController from './controllers/health';
 import * as versionController from './controllers/version';
 
@@ -19,6 +20,7 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello World').end();
 });
 
+app.get('/greeting/:name', greetingController.get);
 app.get('/health', healthController.get);
 app.get('/version', versionController.get);
 
