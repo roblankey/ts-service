@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (res: Response) => {
   res.send('Hello World');
+  res.end();
 });
 
 app.get('/health', healthController.get);
