@@ -1,7 +1,8 @@
 {
-    "defaultSeverity": "error",
-    "extends": "tslint-config-airbnb",
-    "jsRules": {},
-    "rules": {},
-    "rulesDirectory": []
+  "extends": "gts/tslint.json",
+  "linterOptions": {
+    "exclude": [
+      "**/*.json"
+    ]
+  }
 }
