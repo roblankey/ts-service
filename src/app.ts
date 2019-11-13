@@ -1,6 +1,6 @@
-import * as express from 'express';
-import * as compression from 'compression';
-import * as bodyParser from 'body-parser';
+import express from 'express';
+import compression from 'compression';
+import bodyParser from 'body-parser';
 
 import * as healthController from './controllers/health';
 import * as versionController from './controllers/version';

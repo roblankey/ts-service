@@ -1,8 +1,17 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": ".build"
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "outDir": "dist"
   },
   "include": [
     "src/**/*.ts",
