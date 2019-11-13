@@ -8,10 +8,10 @@
   },
   "author": "Rob Lankey",
   "license": "MIT",
-  "main": "dist/server.js",
-  "types": "dist/server.d.ts",
+  "main": ".dist/server.js",
+  "types": ".dist/server.d.ts",
   "files": [
-    "dist"
+    ".dist"
   ],
   "scripts": {
     "build": "npm run check && npm run compile && npm run lint",
@@ -24,8 +24,8 @@
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check",
-    "serve": "node dist/server.js",
-    "serve-debug": "nodemon --inspect dist/server.js",
+    "serve": "node .dist/server.js",
+    "serve-debug": "nodemon --inspect .dist/server.js",
     "start": "npm run serve",
     "test": "jest --forceExit --coverage --verbose",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\"",

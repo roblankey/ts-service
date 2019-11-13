@@ -1,6 +1,6 @@
 import errorHandler from 'errorhandler';
 
-import * as app from './app';
+import app from './app';
 import logger from './util/logger';
 
 app.use(errorHandler());

@@ -6,12 +6,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "paths": {
-      "*": [
-        "node_modules/*"
-      ]
-    },
-    "outDir": "dist"
+    "outDir": ".dist"
   },
   "include": [
     "src/**/*.ts"
