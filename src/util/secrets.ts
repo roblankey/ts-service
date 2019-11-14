@@ -15,4 +15,5 @@ if (fs.existsSync('.env')) {
 export const ENVIRONMENT = process.env.NODE_ENV;
 const prod = ENVIRONMENT === 'production';
 
-export const VERSION = process.env['VERSION'];
+export const API_URL = process.env['API_URL'];
+export const SESSION_SECRET = process.env['SESSION_SECRET'];

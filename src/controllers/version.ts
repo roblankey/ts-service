@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { VERSION } from '../util/secrets';
+import pjson from 'pjson';
 
 export const get = (req: Request, res: Response) => {
-  res.json({ version: VERSION }).end();
+  res.json({ version: `${pjson.version}` }).end();
 };
