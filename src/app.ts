@@ -13,6 +13,9 @@ import * as greetingController from './controllers/greeting';
 import * as healthController from './controllers/health';
 import * as versionController from './controllers/version';
 
+// middleware
+import requestLogger from './middleware/request-logger';
+
 import { Request, Response } from 'express';
 
 const app: express.Application = express();
@@ -23,6 +26,7 @@ app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(flash());
+app.use(requestLogger);
 
 app.use(
   lusca({
